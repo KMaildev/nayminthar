@@ -18,10 +18,7 @@
 
                 <div class="award_img">
                     <a href="">
-                        <img class="lazyload"
-                            src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                            data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/01/mu_award.png"
-                            alt="mu_award">
+                        <img class="lazyload" src='{{ asset('data/school_logo.jpg') }}'>
                     </a>
                 </div>
 
@@ -125,8 +122,9 @@
 
     <nav id="gnav">
         <ul id="wrapper">
-            <li>
-                <a href="">
+
+            <li class="toggle">
+                <a href="#">
                     @if (session('key') == 'jp')
                         Nay Min Thar <br> Empire Myanmar
                     @else
@@ -138,15 +136,13 @@
                         <ul class="menu_inner2">
                             <li class="menu_thumbnail">
                                 <a href="">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/02/mu_award.gif"
-                                        alt="ミャンマー・ユニティの強み">
+                                    <img src="{{ asset('data/strength.jpeg') }}" alt=""
+                                        style="height: 140px; width: 100%;">
                                     <span>
                                         @if (session('key') == 'jp')
-                                            の強み <br> Nay Min Thar Empire Myanmar
+                                            Strengths of Our Company
                                         @else
-                                            Strengths of <br> Nay Min Thar Empire Myanmar
+                                            Strengths of Our Company
                                         @endif
                                     </span>
                                 </a>
@@ -154,10 +150,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/02/mu_award.gif"
-                                        alt="ミャンマー・ユニティの強み">
+                                    <img src="{{ asset('data/md.jpg') }}" style="height: 140px; width: 100%;">
                                     <span>
                                         @if (session('key') == 'jp')
                                             MD'S Message
@@ -170,10 +163,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/02/mu_award.gif"
-                                        alt="ミャンマー・ユニティの強み">
+                                    <img src="{{ asset('data/vmv.png') }}" style="height: 140px; width: 100%;">
                                     <span>
                                         @if (session('key') == 'jp')
                                             Vision, Mission & Value
@@ -187,10 +177,8 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/02/mu_award.gif"
-                                        alt="ミャンマー・ユニティの強み">
+                                    <img src="{{ asset('data/authenticity.png') }}" alt=""
+                                        style="height: 140px; width: 100%;">
                                     <span>
                                         @if (session('key') == 'jp')
                                             ミャンマー政府公認、労働大臣より表彰の送り出し機関
@@ -205,10 +193,8 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/02/mu_award.gif"
-                                        alt="ミャンマー・ユニティの強み">
+                                    <img src="{{ asset('data/team.png') }}" alt=""
+                                        style="height: 140px; width: 100%;">
                                     <span>
                                         @if (session('key') == 'jp')
                                             当社のチームメンバーは現場に常駐
@@ -223,7 +209,6 @@
                     </div>
                 </div>
             </li>
-
 
 
             <li class="toggle">
@@ -246,10 +231,7 @@
                             </li>
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2019/05/IMG_2093-e1558673675441-225x300.jpg"
-                                        alt="なぜミャンマーなのか？">
+                                    <img src="{{ asset('data/shwedagon.jpg') }}" alt="" style="height: 130px">
                                     <span>
                                         @if (session('key') == 'jp')
                                             なぜミャンマーなのか？
@@ -263,14 +245,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <noscript>
-                                        <img src="wp-content/uploads/2019/05/413d61ae53b9f20fdc78f2e49b197a47-300x225.jpg"
-                                            alt="ミャンマーの暮らし">
-                                    </noscript>
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2019/05/413d61ae53b9f20fdc78f2e49b197a47-300x225.jpg"
-                                        alt="ミャンマーの暮らし">
+                                    <img src="{{ asset('data/life_in_mm.png') }}" alt="" style="height: 130px">
                                     <span>
                                         @if (session('key') == 'jp')
                                             ミャンマーの暮らし
@@ -284,14 +259,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <noscript>
-                                        <img src="wp-content/uploads/2019/05/413d61ae53b9f20fdc78f2e49b197a47-300x225.jpg"
-                                            alt="ミャンマーの暮らし">
-                                    </noscript>
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2019/05/413d61ae53b9f20fdc78f2e49b197a47-300x225.jpg"
-                                        alt="ミャンマーの暮らし">
+                                    <img src="{{ asset('data/upain.png') }}" alt="" style="height: 130px">
                                     <span>
                                         @if (session('key') == 'jp')
                                             Historical Places
@@ -328,10 +296,8 @@
                             </li>
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2019/10/IMG_0493-300x74.jpg"
-                                        alt="UJLAC日本語学校による日本語教育">
+                                    <img src="{{ asset('data/school_logo.jpg') }}" alt=""
+                                        style="height: 130px; object-fit: contain;">
                                     <span>
                                         @if (session('key') == 'jp')
                                             Ya Hcu Kham Japanese language school.
@@ -344,10 +310,8 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/10/teacher_1-300x191.jpg"
-                                        alt="ミャンマー・ユニティのオンライン教育について">
+                                    <img src="{{ asset('data/school.jpg') }}" alt=""
+                                        style="height: 130px; ">
                                     <span>
                                         School Activities
                                     </span>
@@ -358,54 +322,6 @@
                 </div>
             </li>
 
-
-            <li class="toggle"> <a href="pages/16/index.html"> 技能実習・<br>特定技能について</a>
-                <div class="menu">
-                    <div id="wrapper">
-                        <ul class="menu_inner">
-                            <li class="menu_title"><!--【技能実習・特定技能】受け入れ可能な職種一覧-->技能実習・<br>特定技能について</li>
-                            <li class="menu_inner2">
-                                <ul class="menu_inner2">
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/506/index.html"><span>介護技能実習生の送り出し</span></a> </li>
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/13/index.html"><span>技能実習生受け入れの流れ</span></a> </li><br>
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/21522/index.html"><span>【完全版】在留資格「特定技能」ミャンマー人材受け入れガイド</span></a>
-                                    </li>
-                                    <!--<li class="menu_thumbnail2"><a href="https://www.myanmarunity.jp/pages/553/"><span>特定技能１号 入国までの流れ</span></a> </li>-->
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/16/index.html"><span>【技能実習・特定技能】受け入れ可能な職種一覧</span></a> </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-
-
-            <li class="toggle"> <a href="pages/22/index.html"> その他在留資格・比較・費用<br>のご案内 </a>
-                <div class="menu">
-                    <div id="wrapper">
-                        <ul class="menu_inner">
-                            <li class="menu_title"> <!--職種・在留資格別ご案内-->その他在留資格・比較・費用<br>のご案内 </li>
-                            <li class="menu_inner2">
-                                <ul class="menu_inner2">
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/610/index.html"><span>高度人材（在留資格：技術・人文知識・国際業務）入国までの流れ</span></a>
-                                    </li>
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/663/index.html"><span>各在留資格の比較</span></a>
-                                    </li>
-                                    <li class="menu_thumbnail2"><a
-                                            href="pages/7348/index.html"><span>受け入れ費用</span></a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
 
 
             <li>
@@ -422,10 +338,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/12/seminar.jpg"
-                                        alt="オンラインセミナー申込">
+                                    <img src="{{ asset('data/application-to-use.jpg') }}" alt="">
                                     <span>
                                         @if (session('key') == 'jp')
                                             オンラインセミナー申込
@@ -439,10 +352,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/12/whitepaper.jpg"
-                                        alt="お役立ち資料ダウンロード">
+                                    <img src="{{ asset('data/japan_book.jpg') }}" alt="">
                                     <span>
                                         @if (session('key') == 'jp')
                                             便利な素材のダウンロード
@@ -456,10 +366,7 @@
 
                             <li class="menu_thumbnail">
                                 <a href="#">
-                                    <img class="lazyload"
-                                        src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E'
-                                        data-src="https://www.myanmarunity.jp/wp-content/uploads/2020/12/faq.jpg"
-                                        alt="よくある質問">
+                                    <img src="{{ asset('data/faq.jpg') }}" alt="">
                                     <span>
                                         @if (session('key') == 'jp')
                                             よくある質問
