@@ -2,10 +2,40 @@
 <html lang="ja">
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <title>
-    Nay Min Thar Empire Myanamr
+    Nay Min Thar Empire Myanmar
     Myanmar Human Resource Center
     @yield('title')
 </title>
+
+<style>
+    /* Font Design  */
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .font-design1 {
+        font-size: clamp(2.8rem, 1.5vw, 3rem);
+        font-weight: bold;
+        margin: 5px;
+        background: linear-gradient(to right,
+                #061E5E 20%,
+                #00affa 30%,
+                #0190cd 70%,
+                #c43477 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 500% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+</style>
 
 <head>
     <meta charset="utf-8">
@@ -37,6 +67,7 @@
 
     @yield('content')
 
+    @include('layouts.footer')
 
     <script src="{{ asset('assets/themes/mu/js/footerFixed.js') }}"></script>
     <script src="{{ asset('assets/themes/mu/js/jquery.colorbox-min.js') }}"></script>
