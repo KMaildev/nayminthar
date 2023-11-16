@@ -24,10 +24,10 @@
         font-weight: bold;
         margin: 5px;
         background: linear-gradient(to right,
-                #061E5E 20%,
-                #00affa 30%,
-                #0190cd 70%,
-                #c43477 80%);
+                #2939FF 20%,
+                #FD0333 30%,
+                #FFFE03 70%,
+                #adaa1a 80%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,7 +41,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="../use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/themes/mu/css/html5reset-1.6.1.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/themes/mu/css/slider.css') }}">
